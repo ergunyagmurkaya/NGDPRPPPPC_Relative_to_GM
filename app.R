@@ -10,8 +10,6 @@
 # Link to project results: https://ergunyagmurkaya-ngdprppppc-relative-to-gm.share.connect.posit.cloud
 
 # getwd()
-# library(rsconnect)
-# rsconnect::writeManifest() 
 
 library(shiny)
 library(shinythemes)
@@ -118,7 +116,8 @@ ui <- fluidPage(
       tabPanel("Info",
                h2("Disclaimer", style = "text-align: center;"),
                p("This Shiny App is made for learning purposes. It may contain mistakes. Work in progress..", br(), "Data received from IMF Database at 29.10.2026.", br(), 
-                 "R Code can be found at: https://github.com/ergunyagmurkaya/NGDPRPPPPC_Relative_to_GM ."),
+                "R Code can be found at: https://github.com/ergunyagmurkaya/NGDPRPPPPC_Relative_to_GM .", br(),
+                "The table and the graphs are loaded usually in 20 seconds." ),
                h2("ID, Name and Descriptions for Used IMF-Indicators", style = "text-align: center; margin-top: 50px;"),
                h3("NGDPRPPPPC"),
                h4("Gross domestic product (GDP), Constant prices, Per capita, purchasing power parity (PPP) international dollar, ICP benchmark 2021"),
@@ -142,7 +141,7 @@ ui <- fluidPage(
                h2("Contact", style = "text-align: center; margin-top: 50px;"),
                p("For any questions you can contact me via email at ergun.yagmurkaya@gmail.com"),
                a("Click to send email", href = "mailto:ergun.yagmurkaya@gmail.com?subject=Question%20about%20the%20Shiny%20app%20NGDPRPPPPC_Relative_to_GM&body=Hello,"),
-               br(),
+               br()
                ), # End of tabPanel Info
       
       tabPanel("Table" ,
@@ -166,8 +165,8 @@ ui <- fluidPage(
                                    sep = " - "
                                  )
                                ),
-                               selected = c(selected_pop10$COUNTRY.ID, "GM"),
-                             ), # End of checkboxGroupInput 
+                               selected = c(selected_pop10$COUNTRY.ID, "GM")
+                             ) # End of checkboxGroupInput 
                ), # End of sidebarPanel 
                
                mainPanel( width = 9,
@@ -193,8 +192,8 @@ ui <- fluidPage(
                         sep = " - "
                       )
                     ),
-                    selected = selected_pop10$COUNTRY.ID,
-                  ), # End of checkboxGroupInput 
+                    selected = selected_pop10$COUNTRY.ID
+                  ) # End of checkboxGroupInput 
                 ), # End of sidebarPanel 
                 
                 mainPanel( width = 9,
