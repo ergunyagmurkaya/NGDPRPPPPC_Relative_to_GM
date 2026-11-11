@@ -113,7 +113,7 @@ ui <- fluidPage(
     titlePanel("NGDPRPPPPC Relative to GM"),
     
     #Navbar
-    navbarPage ("Tabs:",
+    navbarPage ("TTabs:",
       
       tabPanel("Info",
                h2("Disclaimer", style = "text-align: center;"),
