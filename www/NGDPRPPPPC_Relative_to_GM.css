@@ -1,0 +1,31 @@
+/* =========================================
+   NGDPRPPPPC Relative to GM
+   ========================================= */
+
+
+
+
+/* =========================================
+   Scrollable country checkbox list
+   ========================================= */
+
+.checkbox-scrollable .shiny-options-group {
+    display: block !important;
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 5px;
+}
+
+
+/* Space below the checkbox title */
+.checkbox-scrollable > div > label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Space between individual countries */
+.checkbox-scrollable .checkbox {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
