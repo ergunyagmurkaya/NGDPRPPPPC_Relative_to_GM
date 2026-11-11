@@ -113,11 +113,12 @@ ui <- fluidPage(
     titlePanel("NGDPRPPPPC Relative to GM"),
     
     #Navbar
-    navbarPage ("TTabs:",
+    navbarPage ("Tabs:",
       
       tabPanel("Info",
                h2("Disclaimer", style = "text-align: center;"),
-               p("This Shiny App is made for learning purposes. It may contain mistakes.", br(), "Data received from IMF Database at 29.10.2026.", br(), "Complete R-Code will be shared at the end of the project. (Estimated: End of 2026.)"),
+               p("This Shiny App is made for learning purposes. It may contain mistakes. Work in progress..", br(), "Data received from IMF Database at 29.10.2026.", br(), 
+                 "R Code can be found at: https://github.com/ergunyagmurkaya/NGDPRPPPPC_Relative_to_GM ."),
                h2("ID, Name and Descriptions for Used IMF-Indicators", style = "text-align: center; margin-top: 50px;"),
                h3("NGDPRPPPPC"),
                h4("Gross domestic product (GDP), Constant prices, Per capita, purchasing power parity (PPP) international dollar, ICP benchmark 2021"),
