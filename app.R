@@ -7,6 +7,12 @@
 #    https://shiny.posit.co/
 #
 
+# Link to project results: https://ergunyagmurkaya-ngdprppppc-relative-to-gm.share.connect.posit.cloud
+
+# getwd()
+# library(rsconnect)
+# rsconnect::writeManifest() 
+
 library(shiny)
 library(shinythemes)
 library(DT)
@@ -111,7 +117,7 @@ ui <- fluidPage(
       
       tabPanel("Info",
                h2("Disclaimer", style = "text-align: center;"),
-               p("This Shinny App is made for learning purposes. It may contain mistakes.", br(), "Data received from IMF Database at 29.10.2026.", br(), "Complete R-Code will be shared at the end of the project. (Estimated: End of 2026.)"),
+               p("This Shiny App is made for learning purposes. It may contain mistakes.", br(), "Data received from IMF Database at 29.10.2026.", br(), "Complete R-Code will be shared at the end of the project. (Estimated: End of 2026.)"),
                h2("ID, Name and Descriptions for Used IMF-Indicators", style = "text-align: center; margin-top: 50px;"),
                h3("NGDPRPPPPC"),
                h4("Gross domestic product (GDP), Constant prices, Per capita, purchasing power parity (PPP) international dollar, ICP benchmark 2021"),
