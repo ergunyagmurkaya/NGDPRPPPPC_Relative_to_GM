@@ -1,4 +1,10 @@
-# Weighted Palette Script Featuring the Actual Color Ratios of 222 Countries
+
+# Assigning one color to each country according the colors and the weights of the colors in their flags.
+# Saves it as a rds file.
+
+# Colors are derived from an AI-Tool. Not Checked!!)
+
+## Weighted Palette Script Featuring the Actual Color Ratios of 222 Countries
 
 library(dplyr)
 library(grDevices)  # Basic R library for color conversions
